@@ -32,7 +32,7 @@ pipeline {
                 )]) {
 
                     sh '''
-                    echo "$PASS" | docker login -u "$USER" --password-stdin
+                    echo "$PASS" | docker login -u "divya260604" --password-stdin
 
                     docker build -t $DOCKER_HUB/$IMAGE_NAME:$BUILD_TAG app/
                     docker tag $DOCKER_HUB/$IMAGE_NAME:$BUILD_TAG $DOCKER_HUB/$IMAGE_NAME:latest
