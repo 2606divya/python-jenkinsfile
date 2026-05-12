@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         IMAGE_NAME = "python-project"
-        DOCKER_HUB = "divya"
+        DOCKER_HUB = "divya260604"
         BUILD_TAG = "${BUILD_NUMBER}"
     }
 
@@ -27,7 +27,7 @@ pipeline {
             steps {
                 withCredentials([usernamePassword(
                     credentialsId: 'docker-creds',
-                    usernameVariable: 'divya',
+                    usernameVariable: 'divya260604',
                     passwordVariable: 'PASS'
                 )]) {
 
