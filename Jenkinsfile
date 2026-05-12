@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         IMAGE_NAME = "python-project"
-        DOCKER_HUB = "divya2606"
+        DOCKER_HUB = "${USER}"
         BUILD_TAG = "${BUILD_NUMBER}"
     }
 
